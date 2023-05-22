@@ -53,21 +53,21 @@
         document.getElementById("colorLetra").addEventListener("click", aplicar);
         document.getElementById("colorFondo").addEventListener("click", aplicar);
         document.getElementById("tamañoLetra").addEventListener("click", aplicar);
+        document.getElementById("negrita").addEventListener("click", aplicar);
+        document.getElementById("italica").addEventListener("click", aplicar);
+        document.getElementById("subrayado").addEventListener("click", aplicar);
+
 
         function aplicar() {
             var styles = "";
-            
-            
+
             if (letraColor.value) {
-        
                 styles += "color: " + letraColor.value + ";";
-                document.getElementById("colorLetra").style.borderColor = letraColor.value;
                 textArea.style = styles;
             }
 
             if (fondoColor.value) {
                 styles += "background-color: " + fondoColor.value + ";";
-                document.getElementById("colorFondo").style.borderColor = fondoColor.value;
                 textArea.style = styles;
             }
 
