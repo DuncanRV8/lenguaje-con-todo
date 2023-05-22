@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="ejercicio4.3.css">
+    </head>
+    <body>
+        <div id="general">
+            <textarea id= "textA"></textarea>
+            <div id="opciones">
+                <div id="colorLetra">
+                    <label for="letra">Color de letra: </label>
+                    <input type="color" id="letra">
+                    <button id="colorLetra"> ( ͡° ͜ʖ ͡°) </button>
+                </div>
+                
+                <div id="colorFondo">
+                    <label for="fondo">Color de fondo: </label>
+                    <input type="color" id="fondo">
+                    <button id="colorFondo"> ( ͡° ͜ʖ ͡°) </button> 
+                </div>
+
+                <div id="tamañoLetra">
+                    <label for="tamaño">Tamaño de la letra: </label>
+                    <input type="tamaLetra" id="tamaño">
+                    <button id="tamañoLetra"> ( ͡° ͜ʖ ͡°) </button>
+                </div>
+
+                <div>
+                    <label for="negrita">Negrita:</label>
+                    <input type="checkbox" id="negrita">
+                </div>
+
+                <div>
+                    <label for="italica">Italica:</label>
+                    <input type="checkbox" id="italica">
+                </div>
+
+                <div>
+                    <label for="subrayado">Subrayado:</label>
+                    <input type="checkbox" id="subrayado">
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        var letraColor = document.getElementById("letra");
+        var fondoColor = document.getElementById("fondo");
+        var letraTamaño = document.getElementById("tamaño");
+        var negrita = document.getElementById("negrita");
+        var italica = document.getElementById("italica");
+        var subrayado = document.getElementById("subrayado");
+        var textArea = document.getElementById("textA");
+
+        document.getElementById("colorLetra").addEventListener("click", aplicar);
+        document.getElementById("colorFondo").addEventListener("click", aplicar);
+        document.getElementById("tamañoLetra").addEventListener("click", aplicar);
+
+        function aplicar() {
+            var styles = "";
+            
+            
+            if (letraColor.value) {
+        
+                styles += "color: " + letraColor.value + ";";
+                document.getElementById("colorLetra").style.borderColor = letraColor.value;
+                textArea.style = styles;
+            }
+
+            if (fondoColor.value) {
+                styles += "background-color: " + fondoColor.value + ";";
+                document.getElementById("colorFondo").style.borderColor = fondoColor.value;
+                textArea.style = styles;
+            }
+
+            if (letraTamaño.value) {
+                styles += "font-size: " + letraTamaño.value + ";";
+                textArea.style = styles;
+            }
+
+            if (negrita.checked) {
+                textArea.style.fontWeight = "bold";
+               
+            }
+
+            if (italica.checked) {
+                textArea.style.fontStyle = "italic";
+            }
+
+            if (subrayado.checked) {
+                textArea.style.textDecoration = "underline";
+            }
+           
+        }
+    </script>
+</html>
