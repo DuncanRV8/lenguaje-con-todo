@@ -8,13 +8,13 @@
             <div id="opciones">
                 <div id="colorLetra">
                     <label for="letra">Color de letra: </label>
-                    <input type="color" id="letra">
-                    <button id="colorLetra"> ( ͡° ͜ʖ ͡°) </button>
+                    <input type="colorT" id="letra"> <!--Si en el type pones color sale la paleta de color -->
+                    <button id="colorTexto"> ( ͡° ͜ʖ ͡°) </button> 
                 </div>
                 
                 <div id="colorFondo">
                     <label for="fondo">Color de fondo: </label>
-                    <input type="color" id="fondo">
+                    <input type="colorF" id="fondo">
                     <button id="colorFondo"> ( ͡° ͜ʖ ͡°) </button> 
                 </div>
 
@@ -63,11 +63,13 @@
 
             if (letraColor.value) {
                 styles += "color: " + letraColor.value + ";";
+                document.getElementById("colorLetra").style.borderColor = letraColor.value;
                 textArea.style = styles;
             }
 
             if (fondoColor.value) {
                 styles += "background-color: " + fondoColor.value + ";";
+                document.getElementById("colorFondo").style.borderColor = fondoColor.value;
                 textArea.style = styles;
             }
 
