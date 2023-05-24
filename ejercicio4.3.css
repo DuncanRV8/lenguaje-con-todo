@@ -20,3 +20,15 @@
     padding: 10px;
     margin-bottom: 10px;
 }
+#tamañoLetra{
+    padding: 20px;
+    margin-left: -20px;
+}
+
+
+#tamañoBoton{
+    width: 60px;
+    height: 60px;
+    margin-left: 20px;
+}
+
