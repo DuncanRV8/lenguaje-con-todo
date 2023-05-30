@@ -5,21 +5,26 @@ body{
 }
 
 #general{
-    top: 8%;
+    top: 15%;
     left: 7%;
     border: solid 2px red;
     position: absolute;
-    width: 85%;
-    height: 85%;
+    width: 80%;
+    height: 80%;
 }
 
 #titulo{
+    color:rgb(219, 124, 216);
     text-align: center;
     text-decoration: underline;
     font-style: italic;
     font-size: 40px;
     border: solid 2px blue;
-    position: relative;
+    position: absolute;
+    left: 40%;
+    top: 3%;
+    background-color: rgb(242, 138, 179);
+    
 }
 #p{
     margin-left: 20px;
