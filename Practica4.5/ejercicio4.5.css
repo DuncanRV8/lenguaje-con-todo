@@ -5,9 +5,10 @@ body{
 }
 
 #general{
+    top: 8%;
     left: 7%;
     border: solid 2px red;
-    position: relative;
+    position: absolute;
     width: 85%;
     height: 85%;
 }
