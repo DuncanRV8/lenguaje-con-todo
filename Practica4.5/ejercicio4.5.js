@@ -9,6 +9,9 @@ function myAnimeLyst() {
         const tituloJapo = dato.title_japanese;
         const tituloIng  = dato.title_english;
 
+        const tipoAnime = dato.type;
+        document.getElementById("tipoManga").innerHTML += tipoAnime;
+
 
 
     })
