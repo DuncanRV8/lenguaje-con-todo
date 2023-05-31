@@ -7,7 +7,6 @@ body{
 #general{
     top: 8%;
     left: 3%;
-    border: solid 2px red;
     position: absolute;
     width: 95%;
     height: 95%;
@@ -29,8 +28,6 @@ body{
     margin-left: 20px;
 }
 
-
-
 #nombre{
     left: 3%;
     top: 0%;
@@ -38,7 +35,6 @@ body{
     width: 25%;
     height: 17%;
     position: absolute;
-    border: 2px solid blue;
     background: linear-gradient(rgba(241,181,243, 70%), rgba(236, 195, 243, 95));
 }
 #informacion{
@@ -49,7 +45,6 @@ body{
     margin-left: 20px;
     width: 25%;
     height: 45%;
-    border: 2px solid blue;
     background: linear-gradient(rgba(241,181,243, 70%), rgba(236, 195, 243, 95));
 }
 #sinopsis{
@@ -60,13 +55,11 @@ body{
     margin-left: 20px;
     width: 30%;
     height: 30%;
-    border: 2px solid blue;
     background: linear-gradient(rgba(241,181,243, 70%), rgba(236, 195, 243, 95));
 }
 
 #imagen{
     position: absolute;
-    border: 2px solid blue;
     width: 20%;
     height: 40%;
     right: 15%;
@@ -74,7 +67,6 @@ body{
 }
 
 #trailer{
-    border: 2px solid blue; 
     position: absolute;
     width: 40%;
     height: 40%;
