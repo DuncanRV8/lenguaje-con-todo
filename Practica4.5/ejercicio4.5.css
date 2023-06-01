@@ -32,18 +32,18 @@ body{
     left: 3%;
     top: 0%;
     margin-left: 20px;
-    width: 25%;
-    height: 17%;
+    width: 30%;
+    height: 19%;
     position: absolute;
     background: linear-gradient(rgba(241,181,243, 70%), rgba(236, 195, 243, 95));
 }
 #informacion{
     left: 3%;
     position: absolute;
-    top: 16%;
+    top: 17%;
     margin-top: 20px;
     margin-left: 20px;
-    width: 25%;
+    width: 30%;
     height: 45%;
     background: linear-gradient(rgba(241,181,243, 70%), rgba(236, 195, 243, 95));
 }
@@ -53,8 +53,8 @@ body{
     position: absolute;
     margin-top: 20px;
     margin-left: 20px;
-    width: 30%;
-    height: 30%;
+    width: 35%;
+    height: 35%;
     background: linear-gradient(rgba(241,181,243, 70%), rgba(236, 195, 243, 95));
 }
 
@@ -70,6 +70,6 @@ body{
     position: absolute;
     width: 40%;
     height: 40%;
-    right: 10%;
-    top: 55%;
+    right: 8%;
+    top: 60%;
 }
