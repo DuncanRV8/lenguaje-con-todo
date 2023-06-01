@@ -9,7 +9,10 @@ function myAnimeList() {
         if (esHentai) {
             funcion();
         }
+        
+        
         else{
+            
             //titulos de los animes
             document.getElementById('p1').innerHTML += info.title;
             document.getElementById('japones').innerHTML += info.title_japanese;
@@ -25,6 +28,15 @@ function myAnimeList() {
             document.getElementById('imagen').src = info.images.jpg.image_url;
             document.getElementById('trailer').src = info.trailer.embed_url;
 
+            if (info.synopsis == null) {
+                document.getElementById('sinopsis').innerHTML = 'No disponible'
+            }
+            if (info.score == null) {
+                document.getElementById('nota').innerHTML = 'No tiene nota'
+            }
+            if (info.title_english == null) {
+                document.getElementById('ingles').innerHTML = 'No tiene titulo en ingles'
+            }
             //para sacar los generos de la array de genres
             for (let index = 0; index < genero.length; index++) {
                 document.getElementById('genero').innerHTML += genero[index].name + " ";
